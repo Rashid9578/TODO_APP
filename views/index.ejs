@@ -10,6 +10,10 @@
     <div class="container">
     <h1>My Tasks</h1>
 
+    <% if (arr.length === 0) { %>
+        <p>No tasks yet. Add one!</p>
+    <% } %>
+
     <% arr.forEach(a => { %>
         <div class="task">
             <span class="<%= a.done ? 'completed' : '' %>">
