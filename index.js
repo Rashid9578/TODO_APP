@@ -18,28 +18,7 @@ app.listen(port, () => {
     console.log(`app is listening on port ${port}`);
 });
 
-let arr = [
-    {
-        id: uuidv4(),
-        task: "DSA",
-        done: false
-    },
-    {
-        id: uuidv4(),
-        task: "Backend",
-        done: false
-    },
-    {
-        id: uuidv4(),
-        task: "LeetCode",
-        done: false
-    },
-    {
-        id: uuidv4(),
-        task: "CodeChef",
-        done: false
-    }
-];
+let arr = [];
 
 app.get("/", (req, res) => {
     res.redirect("/tasks");
