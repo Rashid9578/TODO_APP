@@ -21,9 +21,9 @@
             </span>
 
             <div>
-                <form method="post" action="/tasks/<%= a.id %>?_method=PATCH" style="display:inline;">
+                <a href="/tasks/<%= a.id %>/edit">
                     <button class="edit-btn">Edit</button>
-                </form>
+                </a>
 
                 <form method="post" action="/tasks/<%= a.id %>/toggle?_method=PATCH" style="display:inline;">
                     <button class="done-btn">
