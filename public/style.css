@@ -1,0 +1,115 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f7fb;
+    color: #333;
+    padding: 30px;
+}
+
+/* Heading */
+h1, h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Container */
+.container {
+    max-width: 600px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Task list */
+.task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    margin-bottom: 10px;
+    background: #eef2ff;
+    border-radius: 8px;
+}
+
+/* Buttons */
+button, .btn {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+/* Edit button */
+.edit-btn {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* Delete button */
+.delete-btn {
+    background-color: #e74c3c;
+    color: white;
+}
+
+/* Add button */
+.add-btn {
+    display: block;
+    width: 100%;
+    margin-top: 15px;
+    background-color: #3498db;
+    color: white;
+}
+
+/* Form */
+form {
+    margin-top: 15px;
+}
+
+/* Textarea */
+textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    resize: none;
+}
+
+/* Input */
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+/* Hover effects */
+button:hover {
+    opacity: 0.9;
+}
+
+/* Links */
+a {
+    text-decoration: none;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: gray;
+    opacity: 0.7;
+}
+
+/* Done button */
+.done-btn {
+    background-color: #f39c12;
+    color: white;
+}

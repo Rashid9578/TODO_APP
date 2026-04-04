@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="container">
+    <h1>My Tasks</h1>
+
+    <% arr.forEach(a => { %>
+        <div class="task">
+            <span class="<%= a.done ? 'completed' : '' %>">
+                <%= a.task %>
+            </span>
+
+            <div>
+                <form method="post" action="/tasks/<%= a.id %>?_method=PATCH" style="display:inline;">
+                    <button class="edit-btn">Edit</button>
+                </form>
+
+                <form method="post" action="/tasks/<%= a.id %>/toggle?_method=PATCH" style="display:inline;">
+                    <button class="done-btn">
+                        <%= a.done ? "Undo" : "Done" %>
+                    </button>
+                </form>
+
+                <form method="post" action="/tasks/<%= a.id %>?_method=DELETE" style="display:inline;">
+                    <button class="delete-btn">Delete</button>
+                </form>
+            </div>
+        </div>
+    <% }) %>
+
+    <a href="tasks/new">
+        <button class="add-btn">Add Task</button>
+    </a>
+</div>
+</body>
+</html>
+
