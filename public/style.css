@@ -34,10 +34,12 @@ h1, h2 {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 10px;
     padding: 12px;
     margin-bottom: 10px;
     background: #eef2ff;
     border-radius: 8px;
+    flex-wrap: wrap; /* 🔥 important */
 }
 
 /* Buttons */
@@ -113,3 +115,28 @@ a {
     background-color: #f39c12;
     color: white;
 }
+
+.actions {
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap; /* allows buttons to go next line */
+}
+
+
+@media (max-width: 500px) {
+    .task {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .actions {
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    button {
+        font-size: 12px;
+        padding: 5px 8px;
+    }
+}
+
