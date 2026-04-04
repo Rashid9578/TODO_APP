@@ -72,6 +72,11 @@ button, .btn {
     color: white;
 }
 
+.done-btn {
+    background-color: #f39c12;
+    color: white;
+}
+
 /* Form */
 form {
     margin-top: 15px;
@@ -118,8 +123,9 @@ a {
 
 .actions {
     display: flex;
+    align-items: center; /* 🔥 aligns everything properly */
     gap: 6px;
-    flex-wrap: wrap; /* allows buttons to go next line */
+    flex-wrap: wrap;
 }
 
 
