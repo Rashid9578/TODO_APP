@@ -54,13 +54,11 @@ button, .btn {
 /* Edit button */
 .edit-btn {
     background-color: #4CAF50;
-    color: white;
 }
 
 /* Delete button */
 .delete-btn {
     background-color: #e74c3c;
-    color: white;
 }
 
 /* Add button */
@@ -69,11 +67,6 @@ button, .btn {
     width: 100%;
     margin-top: 15px;
     background-color: #3498db;
-    color: white;
-}
-
-.done-btn {
-    background-color: #f39c12;
     color: white;
 }
 
@@ -118,7 +111,6 @@ a {
 /* Done button */
 .done-btn {
     background-color: #f39c12;
-    color: white;
 }
 
 .actions {
