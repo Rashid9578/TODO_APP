@@ -41,6 +41,10 @@ let arr = [
     }
 ];
 
+app.get("/", (req, res) => {
+    res.redirect("/tasks");
+});
+
 app.get("/tasks", (req, res) => {
     res.render("index.ejs", { arr });
 });
